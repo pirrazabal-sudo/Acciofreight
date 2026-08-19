@@ -780,6 +780,7 @@
   }
   .section-alt .sec-eyebrow{color:transparent;}
   .sec-head h2{font-size:clamp(1.75rem,3.8vw,2.5rem); margin-bottom:14px; color:var(--ink); font-weight:700;}
+  #contacto .sec-head h2{white-space:nowrap;}
   .section-alt .sec-head h2{color:var(--ink);}
   .sec-head p{margin-top:0; color:var(--muted); font-size:0.97rem; line-height:1.6;}
   .section-alt .sec-head p{color:var(--muted);}
@@ -1027,6 +1028,7 @@
           <a href="#servicios" role="menuitem" data-i18n="dropdown.land">Transporte terrestre</a>
           <div class="drop-head" style="padding-top:12px;" role="separator" data-i18n="dropdown.addedvalue">Servicios adicionales</div>
           <a href="#contacto" role="menuitem" data-i18n="dropdown.cargoinsurance">Seguro de carga</a>
+          <a href="#contacto" role="menuitem" data-i18n="dropdown.customs">Agenciamiento de Aduana</a>
         </div>
       </li>
       <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
@@ -1037,7 +1039,7 @@
         <span class="lang-divider" aria-hidden="true">/</span>
         <a href="#" data-lang="en">EN</a>
       </div>
-       <a href="#contacto" class="nav-cta" data-i18n="nav.quote">Solicitar cotización</a>
+       <a href="#contacto" class="nav-cta" data-i18n="nav.quote">Cotizar ahora</a>
     </div>
     <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-aria="nav.toggle.open" aria-expanded="false" aria-controls="navLinks">
@@ -1165,7 +1167,7 @@
     <h1 class="reveal-up stagger-2" data-i18n="hero.title">Movemos tu carga. <em>Impulsamos</em> tu negocio.</h1>
     <p class="reveal-up stagger-3" data-i18n="hero.description">Soluciones logísticas integrales en transporte marítimo, aéreo y terrestre, con trazabilidad en tiempo real, atención personalizada y cobertura global para conectar tu empresa con el mundo.</p>
     <div class="hero-cta-row reveal-up stagger-4">
-      <a href="#contacto" class="btn-primary" data-i18n="hero.cta1">Solicitar cotización</a>
+      <a href="#contacto" class="btn-primary" data-i18n="hero.cta1">Cotizar ahora</a>
       <a href="#servicios" class="btn-secondary" data-i18n="hero.cta2">Ver servicios</a>
     </div>
   </div>
@@ -1382,6 +1384,7 @@
               <option value="air" data-i18n="form.option.air">Transporte aéreo</option>
               <option value="land" data-i18n="form.option.land">Transporte terrestre</option>
               <option value="insurance" data-i18n="form.option.insurance">Seguro de carga</option>
+              <option value="customs" data-i18n="form.option.customs">Agenciamiento de Aduana</option>
               <option value="other" data-i18n="form.option.other">Otro / consulta general</option>
             </select>
             <div class="field-error" id="err-servicio" role="alert" aria-live="polite"></div>
@@ -1462,6 +1465,7 @@
         <a href="#servicios" data-i18n="footer.service2">Transporte aéreo</a>
         <a href="#servicios" data-i18n="footer.service3">Transporte terrestre</a>
         <a href="#contacto" data-i18n="footer.service5">Seguro de carga</a>
+        <a href="#contacto" data-i18n="footer.service6">Agenciamiento de Aduana</a>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.about">Quiénes somos</h4>
@@ -1475,7 +1479,7 @@
         <a href="https://wa.me/51957518881" target="_blank" rel="noopener">Gian: +51 957 518 881</a>
         <a href="https://wa.me/51922458136" target="_blank" rel="noopener">Patricia: +51 922 458 136</a>
         <a href="#contacto" data-i18n="footer.contact.location">Lima, Perú</a>
-         <a href="#contacto" data-i18n="footer.contact.quote">Solicitar cotización</a>
+         <a href="#contacto" data-i18n="footer.contact.quote">Cotizar ahora</a>
       </div>
     </div>
   </div>
@@ -1503,7 +1507,7 @@
       "nav.about": "Nosotros",
       "nav.services": "Servicios",
       "nav.contact": "Contacto",
-      "nav.quote": "Solicitar cotización",
+      "nav.quote": "Cotizar ahora",
       "nav.toggle.open": "Abrir menú",
       "nav.toggle.close": "Cerrar menú",
       "dropdown.transport": "Transporte",
@@ -1512,6 +1516,7 @@
       "dropdown.land": "Transporte terrestre",
       "dropdown.addedvalue": "Servicios adicionales",
       "dropdown.cargoinsurance": "Seguro de carga",
+      "dropdown.customs": "Agenciamiento de Aduana",
       "dropdown.menuLabel": "Submenú Servicios",
       "lang.selector": "Selector de idioma",
       "hero.eyebrow": "Soluciones logísticas integrales",
@@ -1524,7 +1529,7 @@
       "route.transit.status": "51.92°N · TRÁNSITO",
       "route.destination": "SHANGHÁI",
       "route.destination.status": "31.23°N · DESTINO",
-      "hero.cta1": "Solicitar cotización",
+      "hero.cta1": "Cotizar ahora",
       "hero.cta2": "Ver servicios",
       "about.eyebrow": "01 — Quiénes somos",
       "about.title": "Quiénes somos",
@@ -1598,6 +1603,7 @@
       "form.option.air": "Transporte aéreo",
       "form.option.land": "Transporte terrestre",
       "form.option.insurance": "Seguro de carga",
+      "form.option.customs": "Agenciamiento de Aduana",
       "form.option.other": "Otro / consulta general",
       "footer.brand.desc": "Soluciones logísticas integrales con trazabilidad en tiempo real y atención personalizada.",
       "footer.services": "Servicios",
@@ -1605,6 +1611,7 @@
       "footer.service2": "Transporte aéreo",
       "footer.service3": "Transporte terrestre",
       "footer.service5": "Seguro de carga",
+      "footer.service6": "Agenciamiento de Aduana",
       "footer.about": "Quiénes somos",
       "footer.about.us": "Nosotros",
       "footer.about.services": "Servicios",
@@ -1612,7 +1619,7 @@
       "footer.about.faq": "FAQ",
       "footer.contact": "Contacto",
       "footer.contact.location": "Lima, Perú",
-      "footer.contact.quote": "Solicitar cotización",
+      "footer.contact.quote": "Cotizar ahora",
       "footer.copyright": "© 2026 ACCIO FREIGHT SAC. Todos los derechos reservados.",
       "footer.privacy": "Política de privacidad",
       "footer.terms": "Términos y condiciones",
@@ -1639,6 +1646,7 @@
       "dropdown.land": "Land transport",
       "dropdown.addedvalue": "Additional services",
       "dropdown.cargoinsurance": "Cargo insurance",
+      "dropdown.customs": "Customs brokerage",
       "dropdown.menuLabel": "Services submenu",
       "lang.selector": "Language selector",
       "hero.eyebrow": "Comprehensive logistics solutions",
@@ -1725,6 +1733,7 @@
       "form.option.air": "Air transport",
       "form.option.land": "Land transport",
       "form.option.insurance": "Cargo insurance",
+      "form.option.customs": "Customs brokerage",
       "form.option.other": "Other / General inquiry",
       "footer.brand.desc": "Comprehensive logistics solutions with real-time tracking and personalized support.",
       "footer.services": "Services",
@@ -1732,6 +1741,7 @@
       "footer.service2": "Air transport",
       "footer.service3": "Land transport",
       "footer.service5": "Cargo insurance",
+      "footer.service6": "Customs brokerage",
       "footer.about": "About us",
       "footer.about.us": "About us",
       "footer.about.services": "Services",
