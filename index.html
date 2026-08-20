@@ -18,8 +18,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ACCIO FREIGHT — Soluciones Logísticas Integrales" data-i18n-content="meta.title">
 <meta name="twitter:description" content="Soluciones logísticas integrales en transporte marítimo, aéreo y terrestre, con trazabilidad en tiempo real y cobertura global." data-i18n-content="meta.og.description">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='6' fill='%230B0B0B'/><path d='M20 8 L8 32 L13.5 32 L15.5 28 L24.5 28 L26.5 32 L32 32 L20 8 Z M17.2 24 L20 17 L22.8 24 Z' fill='%232250A6'/></svg>">
-<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='8' fill='%230B0B0B'/><path d='M20 7 L7 33 L13 33 L15 29 L25 29 L27 33 L33 33 L20 7 Z M17 25 L20 17 L23 25 Z' fill='%232250A6'/></svg>">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 
 <!-- Optimized fonts: preconnect + preload critical, swap others -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -780,7 +780,7 @@
   }
   .section-alt .sec-eyebrow{color:transparent;}
   .sec-head h2{font-size:clamp(1.75rem,3.8vw,2.5rem); margin-bottom:14px; color:var(--ink); font-weight:700;}
-  #contacto .sec-head h2{white-space:nowrap;}
+  #contacto .sec-head h2{white-space:normal;}
   .section-alt .sec-head h2{color:var(--ink);}
   .sec-head p{margin-top:0; color:var(--muted); font-size:0.97rem; line-height:1.6;}
   .section-alt .sec-head p{color:var(--muted);}
@@ -972,6 +972,9 @@
     .footer-bottom{align-items:flex-start; flex-direction:column;}
     .footer-bottom-links{flex-direction:column; gap:8px;}
     .services-grid{grid-template-columns:1fr;}
+  }
+  @media(min-width:881px){
+    #contacto .sec-head h2{white-space:nowrap;}
   }
   @media(max-width:360px){
     header nav{width:calc(100% - 16px); padding:10px 8px;}
