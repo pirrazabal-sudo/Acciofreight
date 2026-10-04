@@ -1635,6 +1635,42 @@
 }
 </style>
 
+
+<style>
+/* =========================================================
+   HERO MÓVIL — corrige palabras pegadas al ocultar <br>
+   ========================================================= */
+@media (max-width:640px){
+  .hero h1{
+    white-space:normal !important;
+    word-spacing:normal !important;
+    overflow-wrap:normal !important;
+    word-break:normal !important;
+  }
+
+  /* En el CSS original los <br> se ocultaban en móvil.
+     Al desaparecer sin dejar espacio, quedaba:
+     "Movemos tucarga,Impulsamos tuempresa."
+     Aquí se mantienen los saltos de línea. */
+  .hero h1 br{
+    display:block !important;
+  }
+
+  .hero h1 em{
+    display:inline !important;
+  }
+}
+
+/* Un poco más de seguridad para teléfonos muy angostos */
+@media (max-width:430px){
+  .hero h1{
+    font-size:clamp(38px,11.5vw,48px) !important;
+    line-height:1.02 !important;
+    letter-spacing:-.6px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <a href="#main-content" class="sr-only focusable" tabindex="0">Saltar al contenido</a>
